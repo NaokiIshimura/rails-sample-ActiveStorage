@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<% if @user.avatar.attached? %>
+  <p>
+    <strong>Avatar:</strong>
+    <%= @user.avatar.filename %>
+
+    <% if ( @user.avatar.filename.to_s =~ /\.jpeg$|\.jpg$|\.png$/ ) %>
+      <br>
+      <%= image_tag @user.avatar, size: '100' %>
+    <% end %>
+
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
