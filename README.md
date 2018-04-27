@@ -11,6 +11,7 @@ ActiveStorage Sample Code
 ```
 $ rails active_storage:install
 $ rails g scaffold user name:string
+$ rails db:migrate
 ```
 
 ## Model
