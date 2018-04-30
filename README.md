@@ -42,21 +42,26 @@ end
  
 <div class="field">
   <%= form.label :avatar %>
-  <%= form.file_field :avatar %>
+  <%= form.file_field :avatar, accept: '.jpeg, .jpg, .gif, .png, .bmp' %>
 </div>
  ```
  
  ```
  # app/views/users/show.html.erb
  
- <% if @user.avatar.attached? %>
+<%# ファイルが添付されてるか？ %>
+<% if @user.avatar.attached? %>
   <p>
     <strong>Avatar:</strong>
+    <%# ファイル名を表示 %>
     <%= @user.avatar.filename %>
 
-    <% if ( @user.avatar.filename.to_s =~ /\.jpeg$|\.jpg$|\.png$/ ) %>
-      <br>
-      <%= image_tag @user.avatar, size: '100' %>
+    <%# ファイルがの拡張子がjpeg,jpg,gif,png,bmpか？ %>
+    <% if @user.avatar.filename.to_s =~ /\.jpeg$|\.jpg$|\.gif$|\.png$|\.bmp$/ %>
+    　　 <p>
+       <%# 画像ファイルを表示 %>
+       <%= image_tag @user.avatar, height: '100' %>
+      </p>
     <% end %>
 
   </p>
