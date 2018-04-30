@@ -6,6 +6,10 @@ ActiveStorage Sample Code
 
 [Active Storage の概要 \| Rails ガイド](https://railsguides.jp/active_storage_overview.html)
 
+## Qiita
+
+[ActiveStorageでアップロードされたファイルのうちブラウザで表示できる画像のみサムネイル表示させる \- Qiita](https://qiita.com/NaokiIshimura/items/d6bbbe5a444879b187a9)
+
 ## Prep
 
 ```
