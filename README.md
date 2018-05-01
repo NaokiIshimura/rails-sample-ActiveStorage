@@ -8,7 +8,8 @@ ActiveStorage Sample Code
 
 ## Qiita
 
-[ActiveStorageでアップロードされたファイルのうちブラウザで表示できる画像のみサムネイル表示させる \- Qiita](https://qiita.com/NaokiIshimura/items/d6bbbe5a444879b187a9)
+- [ActiveStorageでアップロードされたファイルのうちブラウザで表示できる画像のみサムネイル表示させる \- Qiita](https://qiita.com/NaokiIshimura/items/d6bbbe5a444879b187a9)
+- [ActiveStorageを利用してファイルをアップロードする際に「undefined method \`upload' for nil:NilClass」エラーが発生する \- Qiita](https://qiita.com/NaokiIshimura/items/c8aa4d55cb653ff0501a)
 
 ## Prep
 
